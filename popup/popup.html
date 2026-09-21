@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="brand">
+        <div class="shield">🛡️</div>
+
+        <div>
+          <h1>PhishGuard</h1>
+          <p class="subtitle">Real-Time Phishing Protection</p>
+        </div>
+      </div>
+
+      <div class="active-badge">
+        <span></span>
+        Active Protection
+      </div>
+    </div>
+    <p id="current-url">Checking current website...</p>
+    <p id="https-status"></p>
+    <p id="ip-status"></p>
+    <p id="domain-status"></p>
+    <p id="punycode-status"></p>
+    <p id="form-status">Checking forms...</p>
+    <p id="redirect-status"></p>
+    <hr />
+    <div id="warning-box" style="display: none"></div>
+    <h2>Risk Analysis</h2>
+    <p id="risk-score">Risk Score: --/100</p>
+    <div class="risk-bar">
+      <div id="risk-bar-fill"></div>
+    </div>
+    <p id="risk-level">Risk Level: --</p>
+
+    <script src="../detection/domainAnalyzer.js"></script>
+    <script src="../detection/redirectAnalyzer.js"></script>
+    <script src="../detection/urlAnalyzer.js"></script>
+    <script src="../detection/riskEngine.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

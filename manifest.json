@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PhishGuard",
+  "version": "0.1.0",
+  "description": "A real-time phishing detection browser extension.",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["detection/domainAnalyzer.js", "content/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
