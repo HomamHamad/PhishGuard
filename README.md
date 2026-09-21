@@ -4,6 +4,10 @@ PhishGuard is a Chrome extension that analyzes the active webpage for common phi
 
 The project uses multiple browser-side heuristics to help users identify potentially suspicious websites while keeping the analysis local.
 
+## Preview
+
+![PhishGuard Preview](assets/phishguard-preview.png)
+
 ## Features
 
 - HTTPS connection analysis
